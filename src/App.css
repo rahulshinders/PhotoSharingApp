@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+  width: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header ----------------------- */
+
+@font-face {
+  font-family: 'Avenue-X';
+  src: url("/src/assets/fonts/Avenue\ X.otf") format("opentype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hd-bg {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+}
+
+.hd-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 45px;
+  width: 100%;
+}
+
+.src-icon {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;
+  background-color: rgb(241, 241, 241);
+  border-radius: 30px;
+  margin: 10px;
+  padding: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-img {
+  height: 24px;
+  width: 24px;
+  padding-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.src-name {
+  padding: 0 8px 2px 0;
+  color: rgba(80, 80, 80, 0.893);
+  font-size: 14px;
 }
+
+.src-name:hover {
+  color: black;
+}
+
+.src-icon:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.nav-l {
+  width: 88%;
+  list-style: none;
+  margin-bottom: 4px;
+}
+
+.bg-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 48px;
+  padding-top: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 0 4px rgb(200, 200, 200);
+  background-color: rgb(246, 240, 228);
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 0 8px 0 8px;
+  font-size: 13px;
+  background-color: rgb(246, 227, 190);
+  border: 1px solid rgb(243, 202, 125);
+  padding: 7px 0 7px 0;
+  border-radius: 4px;
+}
+
+.sub-img {
+  height: 18px;
+  width: 18px;
+  padding-right: 8px;
+}
+
+
+.nav-items {
+  padding: 0 4px 0 4px;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 22px;
+}
+
+.nav-items:hover {
+  border-bottom: 2px solid rgb(248, 168, 19);
+  padding-bottom: 13.5px;
+  color: rgb(248, 168, 19);
+}
+
+

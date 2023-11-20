@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import HomePage from "./screens/Home/HomePage";
+import PostPage from "./screens/Post/PostPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="bg">
+          <header className="hd-bg">
+            <div className="hd-1">
+              <nav className="nav-l">
+
+              </nav>
+              <div className="bg-sub">
+                <Link className="submit" to={"/submit"}>
+                  <img
+                    className="sub-img"
+                    src={require("./assets/images/submit.png")}
+                    alt="submit"
+                  />
+                  Submit
+                </Link>
+              </div>
+            </div>
+          </header>
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/submit" element={<PostPage />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
